@@ -8,9 +8,29 @@ namespace H1_Blackjack.View
 {
     internal class View
     {
-        public void message(string message)
+        public void Message(string message)
         {
             Console.WriteLine(message);
+        }
+
+        public void ClearMessage(string message)
+        {
+            Console.Clear();
+            Console.WriteLine(message);
+        }
+
+        public void GreenMessage(string message)
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine(message);
+            Console.ResetColor();
+        }
+
+        public void RedMessage(string message)
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(message);
+            Console.ResetColor();
         }
     }
 }
